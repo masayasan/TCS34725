@@ -2,32 +2,32 @@ let B = 0
 let G = 0
 let R = 0
 let C = 0
-let CMD = 128
-let CMD16 = 32768
+let CMD2 = 128
+let CMD162 = 32768
 pins.i2cWriteNumber(
 41,
-CMD + 18,
+CMD2 + 18,
 NumberFormat.Int8LE,
 false
 )
 serial.writeValue("ID", pins.i2cReadNumber(41, NumberFormat.Int8BE, false))
 pins.i2cWriteNumber(
 41,
-CMD16 + 448,
+CMD162 + 448,
 NumberFormat.Int16BE,
 false
 )
 serial.writeValue("ATTIME", pins.i2cReadNumber(41, NumberFormat.Int8BE, false))
 pins.i2cWriteNumber(
 41,
-CMD16 + 3843,
+CMD162 + 3843,
 NumberFormat.Int16BE,
 false
 )
 serial.writeValue("GAIN", pins.i2cReadNumber(41, NumberFormat.Int8BE, false))
 pins.i2cWriteNumber(
 41,
-CMD16 + 3,
+CMD162 + 3,
 NumberFormat.Int16BE,
 false
 )

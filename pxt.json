@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "カラーセンサー": "github:masayasan/tcs34725#ef90ad7cfb1c2af80887ba7ff67276d9a78ece9f"
     },
     "files": [
         "main.blocks",
