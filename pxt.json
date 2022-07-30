@@ -1,5 +1,5 @@
 {
-    "name": "カラーセンサー",
+    "name": "TCS34725",
     "description": "",
     "dependencies": {
         "core": "*",
